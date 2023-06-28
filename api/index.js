@@ -8,6 +8,15 @@ server.get("/", (request, response) => {
   })
 })
 
+server.post("cursos/create", (req, res) => {
+
+  console.log(req.body);
+
+  res.status(201).json({
+    message: "Petición recibida con éxito",
+    code: 201
+  })
+})
 
 server.listen(PORT, () => {
   console.log(`Escuchando en el puerto ${PORT}`);
