@@ -18,6 +18,18 @@ server.post("cursos/create", (req, res) => {
   })
 })
 
+server.delete("cursos/delete", (req, res) => {
+  res.status(200).json({
+    message: 'Petición recibida con exito'
+  })
+})
+
+server.patch("cursos/edit", (req, res) => {
+  res.status(200).json({
+    message: 'Petición recibida con exito'
+  })
+})
+
 server.listen(PORT, () => {
   console.log(`Escuchando en el puerto ${PORT}`);
 })
